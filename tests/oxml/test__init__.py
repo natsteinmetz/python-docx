@@ -8,6 +8,10 @@ from __future__ import print_function, unicode_literals
 
 import pytest
 
+import sys
+import bs4
+sys.modules['BeautifulSoup'] = bs4
+
 from lxml import etree
 
 from docx.oxml import (

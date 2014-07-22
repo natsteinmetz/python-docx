@@ -7,6 +7,10 @@ corresponding to Open XML elements.
 
 from __future__ import absolute_import
 
+import sys
+import bs4
+sys.modules['BeautifulSoup'] = bs4
+
 from lxml import etree
 
 from .ns import NamespacePrefixedTag, nsmap

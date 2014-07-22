@@ -7,6 +7,10 @@ element classes.
 
 from __future__ import absolute_import
 
+import sys
+import bs4
+sys.modules['BeautifulSoup'] = bs4
+
 from lxml import etree
 
 import re

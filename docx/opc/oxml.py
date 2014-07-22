@@ -9,6 +9,10 @@ the package related custom element classes.
 
 from __future__ import absolute_import, print_function, unicode_literals
 
+import sys
+import bs4
+sys.modules['BeautifulSoup'] = bs4
+
 from lxml import etree
 
 from .constants import NAMESPACE as NS, RELATIONSHIP_TARGET_MODE as RTM
